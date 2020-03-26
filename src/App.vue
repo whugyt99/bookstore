@@ -42,7 +42,7 @@
 </el-header>
 <el-main>
 <el-menu :default-active="this.$route.path" class="el-menu-demo" router mode="horizontal" @open="handleOpen" @close="handleClose">
-<el-menu-item v-for="(item,i) in navList" :key="i" :index="item.name">
+<el-menu-item v-for="(item,i) in navList" :key="i" >
   {{ item.navItem }}
 </el-menu-item>
 </el-menu>
@@ -105,7 +105,7 @@ export default {
   navList: [
   {name: '/App', navItem: '推荐'},
   {name: '/components/HelloWorld', navItem: '教育'},
-  {name: '/components/UserInfo', navItem: '小说'},
+  {name: '/components/Novels', navItem: '小说'},
   {name: '/publishProject', navItem: '童书'},
   {name: '/personalCenter', navItem: '人文社科'},
   {name: '/components/Manager', navItem: '经管'},
